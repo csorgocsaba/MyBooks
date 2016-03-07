@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mybooks.root.BookDetailController">
+   <children>
+      <Label layoutX="88.0" layoutY="53.0" text="ID:" />
+      <Label layoutX="148.0" layoutY="53.0" text="${controller.id}" />
+      <Label layoutX="88.0" layoutY="73.0" text="Title:" />
+      <Label layoutX="148.0" layoutY="73.0" text="${controller.title}" />
+      <Label layoutX="88.0" layoutY="93.0" text="Author:" />
+      <Label layoutX="148.0" layoutY="93.0" text="${controller.author}" />
+      <Label layoutX="88.0" layoutY="113.0" text="Year:" />
+      <Label layoutX="148.0" layoutY="113.0" text="${controller.year}" />
+      <Button fx:id="btn" mnemonicParsing="false" layoutX="88.0" layoutY="143.0" text="Read" onAction="#readBook" />
+   </children>
+</AnchorPane>

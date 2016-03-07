@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mybooks.root.BookReaderController">
+   <children>
+      <Button fx:id="btn" layoutX="268" layoutY="10" mnemonicParsing="false" text="Close" onAction="#closeReader" />
+      <Label layoutX="300" layoutY="580" text="${controller.pagenum}" textAlignment="CENTER" />
+      <Label layoutX="40" layoutY="40" prefHeight="520" prefWidth="520" text="${controller.page}" textAlignment="JUSTIFY" wrapText="true" />
+      <Button layoutX="5.0" layoutY="268.0" mnemonicParsing="false" text="&lt;" onAction="#prevPage" />
+      <Button layoutX="565.0" layoutY="268.0" mnemonicParsing="false" text="&gt;" onAction="#nextPage" />
+   </children>
+</AnchorPane>

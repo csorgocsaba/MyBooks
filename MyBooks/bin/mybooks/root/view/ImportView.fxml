@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mybooks.root.BookImportController">
+   <children>
+      <Label layoutX="88.0" layoutY="53.0" text="Add book" />
+      <Label layoutX="21.0" layoutY="95.0" text="Title" />
+      <TextField fx:id="title" layoutX="102.0" layoutY="91.0" />
+      <Button layoutX="14.0" layoutY="239.0" mnemonicParsing="false" text="Import" onAction="#saveBook" />
+      <Label layoutX="22.0" layoutY="180.0" text="Year" />
+      <Label layoutX="21.0" layoutY="136.0" text="Author" />
+      <TextField fx:id="author" layoutX="102.0" layoutY="132.0" />
+      <TextField fx:id="year" layoutX="102.0" layoutY="176.0" />
+       <Button fx:id="fileButton" layoutX="102.0" layoutY="216.0" mnemonicParsing="false" onAction="#handleFileUpload" text="Pick Html file" />
+   </children>
+</AnchorPane>
